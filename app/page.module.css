@@ -1,0 +1,59 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 40rem;
+  padding: 48px 24px;
+}
+
+.main h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.main h2 {
+  font-size: 1.25rem;
+}
+
+.main p[data-presence] {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 1.25rem;
+}
+
+.main button {
+  width: fit-content;
+  padding: 8px 12px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.main :global(.presence-history) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main :global(.presence-history) li {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.main :global(.presence-history) time {
+  min-width: 8.5rem;
+  font-variant-numeric: tabular-nums;
+}
